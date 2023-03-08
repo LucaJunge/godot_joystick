@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="128"
+   viewBox="0 0 128 128"
+   width="128"
+   version="1.1"
+   id="svg4"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <g
+     id="g830"
+     transform="matrix(5.963103,0,0,5.963103,16.295175,11.56523)">
+    <rect
+       style="fill:#a5efac;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.803534;stroke-opacity:1"
+       id="rect1429"
+       width="12.856534"
+       height="3.2141335"
+       x="1.5717331"
+       y="12.392934"
+       ry="1.0271953"
+       rx="0" />
+    <path
+       style="fill:none;stroke:#a5efac;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 8,14.351318 V 4.3929338"
+       id="path1817" />
+    <circle
+       style="fill:#a5efac;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:47.2441;stroke-opacity:1"
+       id="path2020"
+       cx="8"
+       cy="4.3929338"
+       r="2.4135971" />
+  </g>
+</svg>

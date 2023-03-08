@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bkxhx63net3bx"]
+
+[node name="thumbstick" type="Panel"]
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = -1
+anchor_right = 0.043
+anchor_bottom = 0.077
+offset_right = 32.585
+offset_bottom = 0.103996
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+mouse_filter = 2
