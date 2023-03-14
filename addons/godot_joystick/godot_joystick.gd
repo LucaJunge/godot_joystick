@@ -50,7 +50,7 @@ extends PanelContainer
 
 @export var thumbstick_border_radius : int = 100
 
-@export var thumbstick_margin : float = 0.5
+@export var thumbstick_margin : float = 0.0
 
 ## Limits you can set
 @export_group("Limits")
@@ -66,8 +66,8 @@ var needs_interpolation : bool = false
 func _ready():
 	self.add_child(thumbstick)
 	self.custom_minimum_size = Vector2(150, 150)
-	self.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	self.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	self.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	self.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	self.pivot_offset = size / 2.0
 	base_radius = size / 2.0
 
@@ -140,6 +140,9 @@ func set_thumbstick_color() -> void:
 	var style = thumbstick.get_theme_stylebox("panel")
 	thumbstick.get_theme_stylebox("panel").bg_color = thumbstick_color
 
+## This maps the values we get from the circle
+## (because we limit the length to the radius)
+## To a range from -1 to 1
 func map_circle_to_square(circ: Vector2) -> Vector2:
 	var u2 := circ.x * circ.x
 	var v2 := circ.y * circ.y
