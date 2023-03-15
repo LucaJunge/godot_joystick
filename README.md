@@ -28,3 +28,9 @@ func _process(delta) -> void:
     # Use the input axes
 		bug.position += Vector2(x,y) * speed * delta
 ```
+
+## Test scene
+
+The repository contains a test scene under `addons/godot_joystick/Test.tscn`:
+
+<img src="addons/godot_joystick/media/showcase.png" width="300">
