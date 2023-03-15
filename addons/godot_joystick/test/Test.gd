@@ -1,4 +1,4 @@
-extends Node3D
+extends Control
 
 @onready var bug = %bug
 @onready var hslider = %HSlider
@@ -16,4 +16,4 @@ func _process(delta) -> void:
 		hslider.value = x
 		vslider.value = - y
 		
-		label.text = "X: %.3f   Y: %.3f" % [x, y]
+		label.text = "X: %.2f   Y: %.2f" % [x, y]

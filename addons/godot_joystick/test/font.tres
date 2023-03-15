@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b80r0lgq64j7r"]
+
+[ext_resource type="FontFile" uid="uid://byuhn6mrjta1h" path="res://addons/godot_joystick/test/LilitaOne-Regular.ttf" id="1_s8trq"]
+
+[resource]
+font = ExtResource("1_s8trq")
+font_size = 34
+font_color = Color(0.647059, 0.937255, 0.67451, 1)
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)

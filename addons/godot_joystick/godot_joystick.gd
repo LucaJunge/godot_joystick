@@ -74,6 +74,8 @@ func _ready():
 	set_joystick_theme()
 	
 	gui_input.connect(on_gui_input)
+	
+	# If InputMap.has_action(move_x)...
 	InputMap.add_action(move_x)
 	InputMap.add_action(move_y)
 
