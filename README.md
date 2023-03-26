@@ -1,8 +1,10 @@
-# Godot Joystick (4.0)
+<p align="center">
+	<img src="./addons/godot_joystick/media/logo.png"/>
+</p>
 
-![](./addons/godot_joystick/media/logo.png)
+<h1 style="text-align:center">A Joystick control for Godot 4.0</h1>
 
-This repository contains the source code for my Joystick Plugin for the Godot Engine 4.0
+> Add the 'Joystick' node to your scene, connect to the signals and you're good to go!
 
 ## Installation
 
@@ -18,15 +20,15 @@ You can set some settings for your joystick. Take a look at the inspector to see
 
 ## Usage
 
-In your \_process() function get the joystick input axes:
+In your `\process()` function get the joystick input axes:
 
-```
+```python
 func _process(delta) -> void:
-		var x : float = Input.get_action_strength("move_x")
-		var y : float = Input.get_action_strength("move_y")
+	var x : float = Input.get_action_strength("move_x")
+	var y : float = Input.get_action_strength("move_y")
 
-    # Use the input axes
-		bug.position += Vector2(x,y) * speed * delta
+	# Use the input axes
+	bug.position += Vector2(x,y) * speed * delta
 ```
 
 ## Test scene
