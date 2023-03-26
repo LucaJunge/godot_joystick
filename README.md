@@ -2,7 +2,7 @@
 	<img src="./addons/godot_joystick/media/logo.png"/>
 </p>
 
-<h1 style="text-align:center">A Joystick control for Godot 4.0</h1>
+#A Joystick control for Godot 4.0
 
 > Add the 'Joystick' node to your scene, connect to the signals and you're good to go!
 
