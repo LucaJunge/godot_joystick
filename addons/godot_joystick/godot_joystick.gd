@@ -64,6 +64,14 @@ var last_position : Vector2 = Vector2()
 var needs_interpolation : bool = false
 
 func _ready():
+	if(fade_out == true):
+		thumbstick.material.set("shader_parameter/disable_fade", false)
+		thumbstick.material.set("shader_parameter/fade_duration", fade_out_duration)
+		thumbstick.material.set("shader_parameter/fade_delay", fade_out_begin)
+	else:
+		thumbstick.material.set("shader_parameter/disable_fade", true)
+		
+	
 	self.add_child(thumbstick)
 	self.custom_minimum_size = Vector2(150, 150)
 	self.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
