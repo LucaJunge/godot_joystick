@@ -6,3 +6,4 @@
 shader = ExtResource("1_n2ogd")
 shader_parameter/fade_duration = 2.08165e-12
 shader_parameter/fade_delay = null
+shader_parameter/disable_fade = true
