@@ -1,4 +1,4 @@
-extends PanelContainer
+extends Control
 
 @onready var thumbstick : Panel = preload("thumbstick.tscn").instantiate()
 @onready var thumbstick_radius : Vector2 = thumbstick.size / 2.0
@@ -19,6 +19,9 @@ extends PanelContainer
 ## Specify the name of the Input Action for moving vertically
 ## Don't forget to set them up in the project settings
 @export var move_y = "move_y"
+
+@export_file("*.png;*.jpg") var background_texture = ""
+@export_file("*.png;*.jpg") var thumbstick_texture = ""
 
 @export_group("Fade Out")
 
@@ -64,14 +67,21 @@ var last_position : Vector2 = Vector2()
 var needs_interpolation : bool = false
 
 func _ready():
-	self.add_child(thumbstick)
+	#self.add_child(thumbstick)
 	self.custom_minimum_size = Vector2(150, 150)
-	self.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	self.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	print(custom_minimum_size)
+	self.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	self.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	self.pivot_offset = size / 2.0
 	base_radius = size / 2.0
 
-	set_joystick_theme()
+	# set the thumbstick image
+	var thumbstick_image : TextureRect = TextureRect.new()
+	thumbstick_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	thumbstick_image.set_size(Vector2(150, 150))
+	thumbstick_image.set_texture(load(thumbstick_texture))
+	self.add_child(thumbstick_image)
+	#set_joystick_theme()
 	
 	gui_input.connect(on_gui_input)
 	

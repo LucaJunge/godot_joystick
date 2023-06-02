@@ -1,6 +1,6 @@
 [gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b80r0lgq64j7r"]
 
-[ext_resource type="FontFile" uid="uid://byuhn6mrjta1h" path="res://addons/godot_joystick/test/LilitaOne-Regular.ttf" id="1_s8trq"]
+[ext_resource type="FontFile" uid="uid://byuhn6mrjta1h" path="res://examples/LilitaOne-Regular.ttf" id="1_s8trq"]
 
 [resource]
 font = ExtResource("1_s8trq")

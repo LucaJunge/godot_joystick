@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Godot Joystick"
-run/main_scene="res://addons/godot_joystick/test/Test.tscn"
+config/name="Joystick"
+run/main_scene="res://examples/Example.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.png"
 

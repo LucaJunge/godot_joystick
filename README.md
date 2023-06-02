@@ -41,7 +41,7 @@ git clone https://github.com/LucaJunge/godot_joystick.git
 
 ## Adding the Joystick to the scene
 
-You can add the ![](addons/joystick/node-icon.png) `Joystick` as a new node to your scene.  
+You can add the ![](addons/godot_joystick/icon-16.png) `Joystick` as a new node to your scene.  
 An example scene coud look like this:
 
 ![](images/example_setup.png)
