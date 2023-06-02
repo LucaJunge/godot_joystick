@@ -2,7 +2,7 @@ extends PanelContainer
 
 @onready var thumbstick : Panel = preload("thumbstick.tscn").instantiate()
 @onready var thumbstick_radius : Vector2 = thumbstick.size / 2.0
-
+@onready var shader_material = preload("res://addons/godot_joystick/fade_out.tres")
 ## The main configuration
 @export_category("Configuration")
 
@@ -64,6 +64,15 @@ var last_position : Vector2 = Vector2()
 var needs_interpolation : bool = false
 
 func _ready():
+	self.material = shader_material
+	if(fade_out == true):
+		self.material.set("shader_parameter/disable_fade", false)
+		self.material.set("shader_parameter/fade_duration", fade_out_duration)
+		self.material.set("shader_parameter/fade_delay", fade_out_begin)
+	else:
+		self.material.set("shader_parameter/disable_fade", true)
+		
+	
 	self.add_child(thumbstick)
 	self.custom_minimum_size = Vector2(150, 150)
 	self.size_flags_horizontal = Control.SIZE_SHRINK_CENTER

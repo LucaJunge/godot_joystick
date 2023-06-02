@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dwkfmlnbl4cps"]
+
+[ext_resource type="Shader" path="res://addons/godot_joystick/fade_out.gdshader" id="1_n2ogd"]
+
+[resource]
+shader = ExtResource("1_n2ogd")
+shader_parameter/fade_duration = 2.08165e-12
+shader_parameter/fade_delay = null
+shader_parameter/disable_fade = true

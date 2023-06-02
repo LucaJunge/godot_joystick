@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://bkxhx63net3bx"]
+[gd_scene load_steps=2 format=3 uid="uid://bkxhx63net3bx"]
+
+[ext_resource type="Material" uid="uid://dwkfmlnbl4cps" path="res://addons/godot_joystick/fade_out.tres" id="1_d1iee"]
 
 [node name="thumbstick" type="Panel"]
+material = ExtResource("1_d1iee")
 custom_minimum_size = Vector2(50, 50)
 anchors_preset = -1
 anchor_right = 0.043
